@@ -1,7 +1,10 @@
 ###  介绍
 
 他的由来很简单，有时服务器之间会做文件的传输, 但可能是种种原因，或因为scp麻烦，或对端没有外网，或各种.....
-
+### 安装
+```
+pip install fileporter
+```
 ### 方法
 
 运行
@@ -9,6 +12,13 @@
 ```
 [ruifengyun@devops fileporter ]$ python fileporter.py 9090
 INFO:root:Serving HTTP on 0.0.0.0 port 9090 ...
+
+and ,same as SimpleHTTPServer method
+
+[ruifengyun@devops ~ ]$ python -m fileporter 8080
+INFO:root:Serving HTTP on 0.0.0.0 port 8080 ...
+
+
 ```
 
 你可以打开浏览器去下载上传,也可以直接用curl来进行上传
