@@ -7,11 +7,11 @@
 运行
 
 ```
-[ruifengyun@devops fileporter ]$ python server.py 9090
+[ruifengyun@devops fileporter ]$ python fileporter.py 9090
 INFO:root:Serving HTTP on 0.0.0.0 port 9090 ...
 ```
 
-你可以大考浏览器去下载上传,也可以直接用curl来进行上传
+你可以打开浏览器去下载上传,也可以直接用curl来进行上传
 
 ```
 curl -F "file=@app.py" http://127.0.0.1:9090/
