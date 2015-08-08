@@ -4,6 +4,11 @@
 
 ### 安装
 ```
+git clone git@github.com:rfyiamcool/fileporter.git
+cd fileporter;python setup.py install
+
+或者.
+
 pip install fileporter
 ```
 ### 方法
