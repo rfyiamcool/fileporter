@@ -1,6 +1,7 @@
 ###  介绍
 
 他的由来很简单，有时服务器之间会做文件的传输, 但可能是种种原因，或因为scp麻烦，或对端没有外网，或各种.....
+
 ### 安装
 ```
 pip install fileporter
@@ -15,7 +16,7 @@ INFO:root:Serving HTTP on 0.0.0.0 port 9090 ...
 
 and ,same as SimpleHTTPServer method
 
-[ruifengyun@devops ~ ]$ python -m fileporter 8080
+[ruifengyun@devops ~ ]$ python -m fileporter.server 8080
 INFO:root:Serving HTTP on 0.0.0.0 port 8080 ...
 
 
@@ -30,7 +31,12 @@ curl -F "file=@app.py" http://127.0.0.1:9090/
 下载的方法
 
 ```
-curl -O http://127.0.0.1:9090/upload/app.py
+curl -O http://127.0.0.1:9090/app.py
 ```
 
+下面是浏览器的截图... 
 ![Alt text](fileporter.jpg)
+
+
+### to do list
+1.   fix run path
