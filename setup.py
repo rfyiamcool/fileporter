@@ -6,7 +6,7 @@ install_requires = [
 
 setup(
     name='fileporter',
-    version='1.2',
+    version='1.7',
     description='support download/upload/browser,use tornado',
     author='fengyun',
     author_email='rfyiamcool@163.com',

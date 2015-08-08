@@ -1,2 +1,2 @@
-include static/index.html static/fileporter.jpg
-recursive-include static *.png *.jpg
+include static/index.html  README.md
+recursive-include fileporter static/index.html
