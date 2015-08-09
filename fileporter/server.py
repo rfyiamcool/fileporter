@@ -18,7 +18,7 @@ class Application(tornado.web.Application):
     def __init__(self):
         handlers = [
             (r"/", IndexHandler),
-            (r"/upload/([A-Za-z0-9\_\.\-]+)", UploadHandler),
+            (r"/([A-Za-z0-9\_\.\-]+)", UploadHandler),
             (r"/undefined", ErrorHandler),
         ]
         
@@ -43,7 +43,7 @@ class IndexHandler(tornado.web.RequestHandler):
 class UploadHandler(tornado.web.RequestHandler):
     @tornado.web.asynchronous
     def get(self, filename):
-        x = open("" + filename)
+        x = open(os.getcwd()+'/' + filename)
         self.set_header('Content-Type', 'text/csv')
         self.set_header('Content-Disposition', 'attachment; filename=' + filename)
         self.finish(x.read())

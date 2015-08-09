@@ -24,12 +24,18 @@ and ,same as SimpleHTTPServer method
 [ruifengyun@devops ~ ]$ python -m fileporter.server 8080
 INFO:root:Serving HTTP on 0.0.0.0 port 8080 ...
 
+```
+
+查看当前的文件列表
+```
+curl http://127.0.0.1:9090/
 
 ```
 
 你可以打开浏览器去下载上传,也可以直接用curl来进行上传
 
 ```
+
 curl -F "file=@app.py" http://127.0.0.1:9090/
 ```
 
