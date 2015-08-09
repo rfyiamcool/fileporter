@@ -48,6 +48,20 @@ curl -O http://127.0.0.1:9090/app.py
 下面是浏览器的截图... 
 ![Alt text](fileporter.jpg)
 
+### 性能测试
+```
+[ruifengyun@devops blog_bakcup ]$ wget xiaorui.cc:9090/xxx.tar.gz
+--2015-08-09 11:42:49--  http://xiaorui.cc:9090/xxx.tar.gz
+Resolving xiaorui.cc... 106.186.21.252
+Connecting to xiaorui.cc|106.186.21.252|:9090... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 98885117 (94M) [text/csv]
+Saving to: '2015-08-09-11-13.tar.gz'
+
+xxx.tar.gz                 100%[===============================================================================>]  94.30M  3.46MB/s   in 48s
+
+2015-08-09 11:43:38 (1.98 MB/s) - 'xxx.tar.gz' saved [98885117/98885117]
+```
 
 ### to do list
 1. fix run path
