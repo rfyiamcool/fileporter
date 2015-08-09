@@ -44,4 +44,5 @@ curl -O http://127.0.0.1:9090/app.py
 
 
 ### to do list
-1.   fix run path
+1. fix run path
+2. 配套一个客户端，支持断点续传和多线程下载。 
